@@ -3,9 +3,9 @@ Uni Soton research project
 
 Program requires installation of tensorflow and PIL packages in whichever python environment you are using. Code was written for python 3.5, tensorflow version 1.3 and was run from an anaconda environment. Other setup configurations should work but have not been tested.
 
-All modules are commented and have a description text. The vast majority are intended to be imported into a python console and run by calling a function from there. If you are unsure what a module does the best way to find out is to read the description text and try to run whatever looks like the most important function from inside python.
+Where possible I have tried to make the program modular with a philosophy of one module per process/idea. The vast majority of the time you will only want to use a few of the modules (documented under "Key operations"). The remaining modules have typically been written with a single purpose in mind such as examining the output data to find a sine curve.
 
-Where possible I have tried to make the program modular with a philosophy of one module per process. The vast majority of the time you will only want to use a few of the modules (documented under "Key Activities"). The remaining modules have typically been written with a single purpose in mind such as examining the output data to find a sine curve.
+All modules are commented and have a description text. The vast majority are intended to be imported into a python console and run by calling a function from there. If you are unsure what a module does the best way to find out is to read the description text and try to run whatever looks like the most important function from inside python.
 
 #### Key operations
 
