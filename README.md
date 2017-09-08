@@ -7,7 +7,7 @@ All modules are commented and have a description text. The vast majority are int
 
 Where possible I have tried to make the program modular with a philosophy of one module per process. The vast majority of the time you will only want to use a few of the modules (documented under "Key Activities"). The remaining modules have typically been written with a single purpose in mind such as examining the output data to find a sine curve.
 
-###### Key operations
+#### Key operations
 
 To train the classifier:
  - In python enter `import Extract_Handler as EH` then `EH.extract()`
@@ -25,7 +25,7 @@ To process lots of cores all in one go:
  - In python enter `CPA.process_multiple`
 This is set up to process ALL the cores which will take a very long time. However, you can also use it to process a subset by amending the "prefix" variable within Core_Processing_Alt.py
 
-###### Other operations
+#### Other operations
 
 To create a training set and a seperate evaluation set:
  - In python enter `import Extract_Handler as EH` then `EH.extract(1)`. Notice the crucial argument "1" which forces the extract handler to partition off some of the training data for use as evaluation data.
@@ -44,7 +44,7 @@ To train the classifier using a different training set:
  - Extract_Handler.py will assign a class to your images automatically depending on the first 4 letters of each image file. If you are using training images which have different prefixes to the ones I have used you will need to edit Extract_Handler.py to add your prefixes (look in the "get_category()" function).
  - train the classifier (as described above)
  
-###### Suggestions for modifying or reusing the code
+#### Suggestions for modifying or reusing the code
  
 The classifier modules (cifar10, cifar10_train, cifar10_eval, cifar10_input) were built by modifying a tensorflow tutorial: https://www.tensorflow.org/tutorials/deep_cnn
 They have been substantially modified and as a result the code is a bit frankenstein-ish with a couple of irritating quirks. If you want to use the code then it works as is but if you anticipate making changes to the input/output structure then you would be well advised to completely rewrite these modules (from scratch) although there are some ideas and code snippets which you might want to reuse such as the graph strucute and confusion matrix evaluation output.
