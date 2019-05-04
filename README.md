@@ -1,5 +1,5 @@
 # Drill-Core-Image-Analysis
-Uni Soton research project - readme written as aprt of project handover and intended to be used in conjunction with curated image files.
+Uni Soton research project
 
 Program requires installation of tensorflow and PIL packages in whichever python environment you are using. Code was written for python 3.5, tensorflow version 1.3 and was run from an anaconda environment. Other setup configurations should work but have not been tested.
 
